@@ -1,19 +1,9 @@
 ## $\textcolor{red}{\textsf{Compact Caesar Cipher}}$
 =======================================================================================
 
-
-## Python3 (py)
-- [implementation](https://github.com/loneicewolf/ciphers-python/blob/main/Caesar_Cipher.py)
-```py
-def r_string(s,k): return(''.join([ chr(97+(ord(c)-97+k)%26) for c in s ]))
-def r_letter(l,k): return(chr(97+(ord(l)-97+k)%26))
-```
-![image](https://github.com/loneicewolf/Compact-Caesar-Cipher/assets/68499986/5002bf53-1a3f-4f93-ad13-9cb78992fe3b)
-
-=======================================================================================
-
 ## GUI Python3 (`Jupyter Notebook`)
 ```py
+def r_string(s,k): return(''.join([ chr(97+(ord(c)-97+k)%26) for c in s ]))
 def F():
     import ipywidgets as widgets
     from ipywidgets import HBox, VBox
@@ -27,12 +17,13 @@ def F():
         print(r_string(BOX,k))
 F()
 ```
-![image](https://github.com/loneicewolf/Compact-Caesar-Cipher/assets/68499986/c244fcde-eafb-4435-a77c-40c1167070d1)
+![image](https://github.com/loneicewolf/Compact-Caesar-Cipher/assets/68499986/a49fbf22-f3dc-4ba5-ac32-21b941ebddb1)
+![image](https://github.com/loneicewolf/Compact-Caesar-Cipher/assets/68499986/5002bf53-1a3f-4f93-ad13-9cb78992fe3b)
+- [implementation](https://github.com/loneicewolf/ciphers-python/blob/main/Caesar_Cipher.py)
+
+
 
 =======================================================================================
-
-
-
 ## JavaScript (js)
 - [implementation](http://stackoverflow.com/a/617685/987044)
 ```js
