@@ -1,4 +1,6 @@
-# Compact-Caesar-Cipher
+## $\textcolor{red}{\textsf{Compact Caesar Cipher}}$
+=======================================================================================
+
 
 ## Python3 (py)
 - [implementation](https://github.com/loneicewolf/ciphers-python/blob/main/Caesar_Cipher.py)
@@ -8,6 +10,27 @@ def r_letter(l,k): return(chr(97+(ord(l)-97+k)%26))
 ```
 ![image](https://github.com/loneicewolf/Compact-Caesar-Cipher/assets/68499986/5002bf53-1a3f-4f93-ad13-9cb78992fe3b)
 
+=======================================================================================
+
+## GUI Python3 (`Jupyter Notebook`)
+```py
+def F():
+    import ipywidgets as widgets
+    from ipywidgets import HBox, VBox
+    import numpy as np
+    import matplotlib.pyplot as plt
+    from IPython.display import display
+    %matplotlib inline
+    @widgets.interact
+    def f(BOX=widgets.Text(value='abcdefghijklmnopqrstuvwxyz', disabled=False),k=range(0,26)):
+        plain_text = BOX
+        print(r_string(BOX,k))
+F()
+```
+![image](https://github.com/loneicewolf/Compact-Caesar-Cipher/assets/68499986/c244fcde-eafb-4435-a77c-40c1167070d1)
+
+=======================================================================================
+
 
 
 ## JavaScript (js)
@@ -16,4 +39,6 @@ def r_letter(l,k): return(chr(97+(ord(l)-97+k)%26))
 function rot(s,i) {return s.replace(/[a-zA-Z]/g, function (c) {  return String.fromCharCode((c <= 'Z' ? 90 : 122) >= (c = c.charCodeAt(0) + i) ? c : c - 26); });}
 ```
 ![image](https://github.com/loneicewolf/Compact-Caesar-Cipher/assets/68499986/b6a61be9-efd5-477b-aab7-0742c4f41d4e)
+
+=======================================================================================
 
