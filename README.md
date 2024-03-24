@@ -2,7 +2,8 @@
 
 Python3 (py)
 ```py
-
+def r_string(s,k): return(''.join([ chr(97+(ord(c)-97+k)%26) for c in s ]))
+def r_letter(l,k): return(chr(97+(ord(l)-97+k)%26))
 ```
 
 
