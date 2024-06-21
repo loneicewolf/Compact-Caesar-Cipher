@@ -3,6 +3,7 @@
 
 ## GUI Python3 (`Jupyter Notebook`)
 ```py
+import ipywidgets
 def r_string(s,k): return(''.join([ chr(97+(ord(c)-97+k)%26) for c in s ]))
 def F():
     import ipywidgets as widgets
