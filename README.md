@@ -22,7 +22,23 @@ F()
 ![image](https://github.com/loneicewolf/Compact-Caesar-Cipher/assets/68499986/5002bf53-1a3f-4f93-ad13-9cb78992fe3b)
 - [implementation](https://github.com/loneicewolf/ciphers-python/blob/main/Caesar_Cipher.py)
 
+```
+#https://github.com/jupyter-widgets/ipywidgets/issues/1775
+import ipywidgets as widgets
 
+out = widgets.Output()
+def on_value_change(change):
+    with out:
+        #print("here ",change['new'])
+        k=change['new']
+        print(r_string("abc",k))
+slider = widgets.IntSlider(min=1, max=26, step=1, continuous_update=True)
+play = widgets.Play(min=1, interval=50)
+
+slider.observe(on_value_change, 'value')
+widgets.jslink((play, 'value'), (slider, 'value'))
+widgets.VBox([play, slider, out])
+```
 
 =======================================================================================
 ## JavaScript (js)
