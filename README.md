@@ -23,6 +23,8 @@ F()
 - [implementation](https://github.com/loneicewolf/ciphers-python/blob/main/Caesar_Cipher.py)
 
 ```
+def r_string(s,k): return(''.join([ chr(97+(ord(c)-97+k)%26) for c in s ]))
+
 #https://github.com/jupyter-widgets/ipywidgets/issues/1775
 import ipywidgets as widgets
 
